@@ -1,0 +1,43 @@
+{
+  "name": "sdu-map-server",
+  "version": "1.0.0",
+  "description": "沙袋地图后端",
+  "main": "app.ts",
+  "author": "lnkkerst",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node app.ts",
+    "nodemon": "nodemon app.ts",
+    "start": "tsc && node dist/app.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^3.3.0",
+    "axios": "^0.27.2",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^11.0.1",
+    "sequelize": "^6.21.2",
+    "sqlite3": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.7",
+    "@types/koa-json": "^2.0.20",
+    "@types/koa-logger": "^3.1.2",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa__cors": "^3.3.0",
+    "@types/node": "^18.0.3",
+    "@types/sequelize": "^4.28.14",
+    "@types/sqlite3": "^3.1.8",
+    "@types/validator": "^13.7.4",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  }
+}
