@@ -5,11 +5,21 @@ import logger from "koa-logger";
 import cors from "@koa/cors";
 import router from "./routes";
 import config from "./config";
+import sequelize from "./providers/sequelize";
 
 import checkTokenMiddleware from "./middleware/checkToken";
 
 export default async () => {
   const app = new Koa();
+
+  try {
+    await sequelize.authenticate();
+    console.log("Connection has been established successfully.");
+  } catch (error) {
+    console.error("Unable to connect to the database:", error);
+    return;
+  }
+  await sequelize.sync();
 
   app.use(logger());
   app.use(cors());

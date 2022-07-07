@@ -109,3 +109,4 @@ dist
 # personal config
 src/config/
 !.gitkeep
+db/
