@@ -11,6 +11,7 @@ specifiers:
   '@types/node': ^18.0.3
   '@types/sequelize': ^4.28.14
   '@types/sqlite3': ^3.1.8
+  '@types/uuid': ^8.3.4
   '@types/validator': ^13.7.4
   axios: ^0.27.2
   koa: ^2.13.4
@@ -23,6 +24,7 @@ specifiers:
   sqlite3: ^5.0.8
   ts-node: ^10.8.2
   typescript: ^4.7.4
+  uuid: ^8.3.2
 
 dependencies:
   '@koa/cors': 3.3.0
@@ -34,6 +36,7 @@ dependencies:
   koa-router: 11.0.1
   sequelize: 6.21.2_sqlite3@5.0.8
   sqlite3: 5.0.8
+  uuid: 8.3.2
 
 devDependencies:
   '@types/koa': 2.13.4
@@ -45,6 +48,7 @@ devDependencies:
   '@types/node': 18.0.3
   '@types/sequelize': 4.28.14
   '@types/sqlite3': 3.1.8
+  '@types/uuid': 8.3.4
   '@types/validator': 13.7.4
   nodemon: 2.0.19
   ts-node: 10.8.2_fxk5i3xm3ivo7fjwhcizcinpla
@@ -313,6 +317,10 @@ packages:
     resolution: {integrity: sha512-sQMt/qnyUWnqiTcJXm5ZfNPIBeJ/DVvJDwxw+0tAxPJvadzfiP1QhryO1JOR6t1yfb8NpzQb/Rud06mob5laIA==}
     dependencies:
       '@types/node': 18.0.3
+    dev: true
+
+  /@types/uuid/8.3.4:
+    resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
     dev: true
 
   /@types/validator/13.7.4:
