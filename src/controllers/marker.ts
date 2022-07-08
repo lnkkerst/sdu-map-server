@@ -27,6 +27,7 @@ export default {
     await next();
   },
   postMarker: async (ctx: Context, next: any) => {
+    delete ctx.request.body.data.id;
     try {
       await MarkerModel.update(ctx.request.body.data, {
         where: {
